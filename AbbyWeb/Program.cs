@@ -1,10 +1,13 @@
 using AbbyWeb.Data;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation; // Add this using directive
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddRazorPages();
+builder.Services
+    .AddRazorPages()
+    .AddRazorRuntimeCompilation();
 
 builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
         builder.Configuration.GetConnectionString("DefaultConnection")
