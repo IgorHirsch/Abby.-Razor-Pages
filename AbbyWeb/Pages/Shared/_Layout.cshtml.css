@@ -40,9 +40,11 @@ button.accept-policy {
 }
 
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  white-space: nowrap;
-  line-height: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #212529; /* Optional: Dunkler Hintergrund */
+    color: #dee2e6; /* Optional: Textfarbe */
+    text-align: center;
+    padding: 10px 0;
 }
