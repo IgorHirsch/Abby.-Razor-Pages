@@ -12,9 +12,9 @@ public class ApplicationDbContext : IdentityDbContext
 
     public DbSet<MenuItem> MenuItem { get; set; }
 
-
     public DbSet<ApplicationUser> ApplicationUser { get; set; }
 
+    public DbSet<ShoppingCart> ShoppingCart { get; set; }
 
 
     public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
@@ -68,5 +68,7 @@ public class ApplicationDbContext : IdentityDbContext
     };
 
         modelBuilder.Entity<MenuItem>().HasData(menuItems);
+
+        
     }
 }

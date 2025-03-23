@@ -1,10 +1,81 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+	ViewData["Title"] = "Home page";
 }
+<form method="post">
+	<br />
+	<div class="backgroundWhiteBorder">
+		<div class="container">
+			<div class="card">
+				<div class="card-header bg-dark text-light ml-0">
+					<div class="row">
+						<div class="col-6 pt-2">
+							<h3 class="text-white-50">Welcome to Our Restaurant</h3>
+						</div>
+						<div class="col-6 text-end">
+							<a class="btn btn-outline-info btn-sm" href="/contact">Contact Us</a>
+						</div>
+					</div>
+				</div>
+				<div class="card-body">
+					<div class="container rounded p-2">
+						<div class="row">
+							<div class="col-12 col-lg-6 pb-4">
+								<div class="row">
+									<h4 class="d-flex justify-content-between align-items-center mb-3">
+										<span class="text-info">Our Specialties:</span>
+									</h4>
+								</div>
+								<div class="row my-1">
+									<div class="col-12">
+										<h5 class="text-muted">Gourmet Dishes</h5>
+										<p>We offer a variety of gourmet dishes prepared with the finest ingredients.</p>
+									</div>
+								</div>
+								<div class="row my-1">
+									<div class="col-12">
+										<h5 class="text-muted">Signature Cocktails</h5>
+										<p>Our mixologists craft delicious cocktails to complement every meal.</p>
+									</div>
+								</div>
+								<div class="row my-1">
+									<div class="col-12">
+										<h5 class="text-muted">Live Music</h5>
+										<p>Enjoy live music performances while savoring your meal on weekends.</p>
+									</div>
+								</div>
+							</div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+							<div class="col-12 col-lg-5 offset-lg-1">
+								<h4 class="d-flex justify-content-between align-items-center mb-3">
+									<span class="text-info">Today's Specials:</span>
+								</h4>
+								<ul class="list-group mb-3">
+									<li class="list-group-item d-flex justify-content-between">
+										<div>
+											<h6 class="my-0">Chef's Special</h6>
+											<small class="text-muted">Mouth-watering lobster tail with garlic butter</small>
+										</div>
+										<span class="text-muted">$30.00</span>
+									</li>
+									<li class="list-group-item d-flex justify-content-between bg-light">
+										<small class="text-info">Happy Hour</small>
+										<strong class="text-info">2-for-1 on selected drinks from 5-7 PM</strong>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="card-footer">
+					<div class="row">
+						<div class="col-12 col-md-4 offset-md-8">
+							<button type="submit" id="btnReserve" value="Reserve Now" class="btn btn-primary form-control">Reserve Now</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
