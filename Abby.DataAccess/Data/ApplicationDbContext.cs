@@ -1,8 +1,9 @@
 ﻿using Abby.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace Abby.DataAccess.Data;
-public class ApplicationDbContext : DbContext
+public class ApplicationDbContext : IdentityDbContext
 {
     
     public DbSet<Category> Category { get; set; }
@@ -10,6 +11,9 @@ public class ApplicationDbContext : DbContext
     public DbSet<FoodType> FoodType { get; set; }
 
     public DbSet<MenuItem> MenuItem { get; set; }
+
+
+    public DbSet<ApplicationUser> ApplicationUser { get; set; }
 
 
 
