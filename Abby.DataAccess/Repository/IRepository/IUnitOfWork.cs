@@ -16,6 +16,13 @@ namespace Abby.DataAccess.Repository.IRepository
 
         IShoppingCartRepository ShoppingCart { get; }
 
+        IOrderHeaderRepository OrderHeader { get; }
+
+        IOrderDetailRepository OrderDetail { get; }
+
+        IApplicationUserRepository ApplicationUser { get; }
+
+
         void Save();
     }
 }
